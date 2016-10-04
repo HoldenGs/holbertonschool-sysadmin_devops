@@ -1,0 +1,1 @@
+This project is for learning how to use bash and create simple bash executables.
