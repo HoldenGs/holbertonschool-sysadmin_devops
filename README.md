@@ -1,0 +1,1 @@
+This project is designed to teach about the basic concepts of chmod, sudo, su, chown, chgrp, id, groups, whoami, adduser, useradd, addgroup. Reinforcement of previous commands also occurs.
