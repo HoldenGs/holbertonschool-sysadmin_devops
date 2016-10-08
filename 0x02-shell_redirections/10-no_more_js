@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -name *.js -nottype d -delete
+find . -name *.js -not -type d -delete
