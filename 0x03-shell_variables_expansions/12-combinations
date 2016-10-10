@@ -1,0 +1,2 @@
+#!/bin/bash
+printf "%s\n" -e {a..z}{{a..n},{p..z}}
