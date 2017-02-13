@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# This script prints "Holberton School" 10 times, but prints "Hi" on the ninth
+I=0
+while [ $I -lt 10 ];
+do
+	if [ $I = 8 ]; then echo "Hi";
+	else echo "Holberton School";
+	fi
+	I=$(( I + 1 ))
+done
