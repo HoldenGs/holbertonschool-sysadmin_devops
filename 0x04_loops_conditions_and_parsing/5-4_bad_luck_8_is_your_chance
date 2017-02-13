@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# This script prints "Holberton School" 10 times, but prints out "bad luck" on
+# the 4th iteration and "good luck" on the 8th iteration
+I=1
+while [ $I -le 10 ];
+do
+	if [ $I = 4 ]; then echo "bad luck";
+	elif [ $I = 8 ]; then echo "good luck";
+	else echo "Holberton School"
+	fi
+	I=$(( I + 1 ))
+done
