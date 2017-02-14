@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# This script prints out the directory contents' basenames in list form
+LIST="$(ls)"
+for i in $LIST;
+do
+    echo "$i"
+done
