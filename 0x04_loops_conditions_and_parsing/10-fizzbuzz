@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # This script prints the FizzBuzz sequence from 1 to 100
-
 for (( I=1; I <= 100; I++ ))
 do
     if [ $((I%3)) -eq 0 -a $((I%5)) -eq 0 ]
