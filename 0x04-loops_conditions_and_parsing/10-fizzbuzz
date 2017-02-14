@@ -3,7 +3,7 @@
 
 for (( I=1; I <= 100; I++ ))
 do
-    if [ $((I%3)) -eq 0 -a $((I%5)) -eq 0 ]
+    if [ $((I%3)) -eq 0 ] && [ $((I%5)) -eq 0 ]
     then
 	echo "FizzBuzz"
     elif [ $((I%3)) -eq 0 ]
