@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # This script prints "Holberton School" 10 times, but prints "Hi" on the ninth
 I=0
-while [ $I -lt 10 ];
+while [ $I -lt 11 ];
 do
-	if [ $I = 8 ]; then echo "Hi";
+	if [ $I = 9 ]; then echo "Hi";
 	else echo "Holberton School";
 	fi
 	I=$(( I + 1 ))
