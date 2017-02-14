@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# This script prints every hour and all minutes of every hour for 12 hours
+I=0
+J=1
+while [ $I -le 12 ];
+do
+    echo "Hour: $I"
+    while [ $J -lt 60 ];
+    do
+	echo "$J"
+	J=$(( J + 1 ))
+    done
+    I=$(( I + 1 ))
+    J=1
+done
