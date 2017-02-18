@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Print the processes associated with bash
+ps -e --forest xu | grep "bash"
