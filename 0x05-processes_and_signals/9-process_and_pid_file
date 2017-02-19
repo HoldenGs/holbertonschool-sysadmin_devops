@@ -3,7 +3,8 @@
 # only terminates on SIGTERM AND SIGQUIT signals
 trap 'echo "I hate the kill command"; sudo rm /var/run/holbertonscript.pid; exit' TERM
 trap 'echo "Y U no love me?!"' INT
-echo $(pgrep -f 9-process_and_pid_file) | sudo tee /var/run/holbertonscript.pid > /dev/null
+echo "$(pgrep -f 9-process_and_pid_file) | sudo tee /var/run/holbertonscript.pid > /dev/null"
+# shellcheck disable=SC2078
 while [ true ];
 do
     echo "To infinity and beyond"
