@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # Print a string indefinitely, can't be killed with SIGTERM
+# shellcheck disable=SC2078
 trap 'echo "I am invincible!!!"' TERM
 while [ true ];
 do
