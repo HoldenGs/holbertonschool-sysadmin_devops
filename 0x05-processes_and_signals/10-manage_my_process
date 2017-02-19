@@ -3,6 +3,7 @@
 # It can be started, stoped, and restarted
 process()
 {
+    # shellcheck disable=SC2078
     while [ true ];
     do
 	echo "I am alive!" >> /tmp/my_process
