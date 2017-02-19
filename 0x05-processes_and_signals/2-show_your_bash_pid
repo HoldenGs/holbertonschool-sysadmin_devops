@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 # Print the processes associated with bash
+# shellcheck disable=SC2009
 ps -e --forest xu | grep "bash"
