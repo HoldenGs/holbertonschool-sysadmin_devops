@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # Print a string indefinitely
+# shellcheck disable=SC2078
 while [ true ];
 do
     echo "To infinity and beyond";
