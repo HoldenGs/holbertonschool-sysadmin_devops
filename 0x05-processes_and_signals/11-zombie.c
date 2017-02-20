@@ -4,7 +4,9 @@
 #include "sys/types.h"
 
 /**
+ * infite_while - infinite while loop
  *
+ * Return: void
  */
 int infite_while(void)
 {
@@ -16,7 +18,9 @@ int infite_while(void)
 }
 
 /**
+ * main - create zombie processes and then call infite_while
  *
+ * Return: 0
  */
 int main(void)
 {
