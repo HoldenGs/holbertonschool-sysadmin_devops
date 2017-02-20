@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Create a 4096 bit RSA key with a password and a file named 'holberton'
+ssh-keygen -b 4096 -P helloKey57% -f holberton
