@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Securely connect to my personal remote server
+ssh -i ~/.ssh/holberton ubuntu@52.23.152.105
