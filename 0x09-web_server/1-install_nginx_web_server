@@ -1,5 +1,5 @@
-#!/usr/bin/env bash
+0;95;0c#!/usr/bin/env bash
 # Install and configure a web server on a ubuntu machine
 sudo apt-get install -y nginx;
 echo "Holberton School HELL YEAH" | sudo tee /usr/share/nginx/html/index.html > /dev/null;
-sudo service nginx reload
+sudo service nginx restart
