@@ -2,4 +2,4 @@
 # Install and configure a web server on a ubuntu machine
 sudo apt-get install -y nginx;
 echo "Holberton School HELL YEAH" | sudo tee /usr/share/nginx/html/index.html > /dev/null;
-sudo nginx -s reload
+sudo service nginx reload
