@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Backup a mysql database in compressed form with a date name
+mysqldump -u root -p --opt holberton > backup.sql;
+tar -zcf "$(date +%d-%M-%Y).tar.gz" backup.sql
