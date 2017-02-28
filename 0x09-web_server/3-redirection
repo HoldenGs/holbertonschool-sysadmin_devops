@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 # Install and configure a web server on a ubuntu machine
 sudo apt-get install -y nginx;
-REDIRECT="rewrite \^\/redirect_me\$ 52.23.152.105 permanent;"
-sudo sed -i "s/# server_name_in_redirect off;/$REDIRECT/" /etc/nginx/nginx.conf
+sudo sed -i "29i\        rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;" /etc/nginx/sites-enabled/default
 echo "Holberton School HELL YEAH" | sudo tee /usr/share/nginx/html/index.html
 sudo service nginx restart
