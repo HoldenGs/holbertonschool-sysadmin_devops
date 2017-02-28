@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Install and configure a web server on a ubuntu machine
+sudo apt-get install -y nginx;
+sudo sed -i "29i\        rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;" /etc/nginx/sites-enabled/default;
+sudo sed -i "30i\\n        error_page 404 /404.html;\n        location = /404.html {\n                root /usr/share/nginx/html;\n                internal;\n        }" /etc/nginx/sites-enabled/default;
+echo "Ceci n'est pas une page" | sudo tee /usr/share/nginx/html/404.html;
+echo "Holberton School HELL YEAH" | sudo tee /usr/share/nginx/html/index.html;
+sudo service nginx restart
