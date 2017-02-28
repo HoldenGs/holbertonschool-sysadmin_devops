@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Install and configure a web server on a ubuntu machine
+sudo apt-get install -y nginx;
+echo "<html>Holberton School HELL YEAH</html>" | sudo tee /usr/share/nginx/html/index.html
