@@ -2,7 +2,7 @@
 # print info on the argument-provided domain and subdomain
 
 subdomain_info() {
-    dig "$2.$1" | grep -A1 'ANSWER SECTION:' | awk -v SUB=$2 'FNR == 2 { printf "The subdomain "SUB" is a "$4" record and points to "$5"\n"}'
+    dig "$2.$1" | grep -A1 'ANSWER SECTION:' | awk -v SUB="$2" 'FNR == 2 { printf "The subdomain "SUB" is a "$4" record and points to "$5"\n"}'
 }
 
 if [ -z "$2" ]
