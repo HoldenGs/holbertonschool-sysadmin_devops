@@ -4,6 +4,6 @@ sudo apt-get update
 sudo apt-get install haproxy
 sudo sed -i "s@=0@=1@" /etc/default/haproxy
 sudo cp /etc/haproxy/haproxy.cfg /etc/haproxy/haproxy.cfg.backup
-add_config="\nlisten main-app 0.0.0.0:80\n\tmode http\n\tbalance roundrobin\n\toption http-server-close\n\toption forwardfor\n\tserver 90-web-02 52.23.152.105:80 check\n\tserver $
+add_config="\nlisten main-app 0.0.0.0:80\n\tmode http\n\tbalance roundrobin\n\toption http-server-close\n\toption forwardfor\n\tserver 90-web-01 52.23.152.105:80 check\n\tserver 90-web-02 52.203.4.8:80 check"
 sudo sed -i "23 a\ $add_config" /etc/haproxy/haproxy.cfg
 sudo service haproxy start
