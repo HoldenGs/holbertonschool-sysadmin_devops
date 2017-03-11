@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Configure the nginx server to run as an nginx user
+pkill apache2
+
+chown -R nginx /etc/nginx/
+chmod 755 -R /etc/nginx/
+chown -R nginx /var/www/
+chmod 755 -R /var/www/
+chown -R nginx /var/log/nginx/
+chmod 755 -R /var/log/nginx/
+chown -R nginx /usr/share/nginx/
+chmod 755 -R /usr/share/nginx/
+
+su nginx
+service nginx start
