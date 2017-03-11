@@ -2,3 +2,4 @@
 # Configures an nginx server to properly listen to port 80
 sudo apt-get -y purge nginx nginx-common nginx-full
 sudo apt-get -y install curl
+sudo service nginx start
