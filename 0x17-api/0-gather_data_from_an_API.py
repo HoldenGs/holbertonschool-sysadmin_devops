@@ -9,8 +9,7 @@ import requests
 from sys import argv
 
 if __name__ == '__main__':
-    user_id = int(argv[1])
-    url = 'https://jsonplaceholder.typicode.com/users/{}'.format(user_id)
+    url = 'https://jsonplaceholder.typicode.com/users/{}'.format(argv[1])
     user = requests.get(url).json()
     todo_url = 'https://jsonplaceholder.typicode.com/todos?userId=' + argv[1]
     todo = requests.get(todo_url).json()
@@ -19,4 +18,4 @@ if __name__ == '__main__':
                                                           todo_done,
                                                           len(todo)))
     for item in todo:
-        print('\t {}'.format(item.get('title')))
+        print('\t{}'.format(item.get('title')))
