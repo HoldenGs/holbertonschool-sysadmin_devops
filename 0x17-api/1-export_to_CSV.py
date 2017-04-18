@@ -1,11 +1,12 @@
 #!/usr/bin/python3
 
+"""
+Export the user's tasks to a CSV file
+Format:
+./1-export_to_CSV.py <user_id>
+"""
+
 if __name__ == '__main__':
-    """
-    Export the user's tasks to a CSV file
-    Format:
-    ./1-export_to_CSV.py <user_id>
-    """
     import requests
     from sys import argv
 
