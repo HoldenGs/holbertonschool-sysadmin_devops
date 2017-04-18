@@ -20,6 +20,6 @@ if __name__ == '__main__':
         task_list.append('"task": "{}", "completed": "{}", "username": "{}"'
                          .format(item.get('title'), item.get('complete'),
                                  user.get('username')))
-    todo_json = '{"' + argv[1] + '": [{' +  '}, {'.join(task_list) + '}]}'
+    todo_json = '{"' + argv[1] + '": [{' + '}, {'.join(task_list) + '}]}'
     with open('{}.json'.format(user_id), 'w') as json_file:
         json_file.write(todo_json)
