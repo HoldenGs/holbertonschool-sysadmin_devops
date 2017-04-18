@@ -1,13 +1,14 @@
 #!/usr/bin/python3
 
+"""
+Grab the todo list for the specified user id
+Format:
+./0-gather_data_from_an_API.py <user_id>
+"""
+import requests
+from sys import argv
+
 if __name__ == '__main__':
-    """
-    Grab the todo list for the specified user id
-    Format:
-    ./0-gather_data_from_an_API.py <user_id>
-    """
-    import requests
-    from sys import argv
 
     user_id = int(argv[1])
     url = 'https://jsonplaceholder.typicode.com/users/{}'.format(user_id)
