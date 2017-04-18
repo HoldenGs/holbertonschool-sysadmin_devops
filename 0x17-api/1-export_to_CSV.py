@@ -7,8 +7,8 @@ Format:
 """
 
 if __name__ == '__main__':
-    import requests
     from sys import argv
+    import requests
 
     user_id = int(argv[1])
     url = 'https://jsonplaceholder.typicode.com/users/{}'.format(user_id)
