@@ -5,10 +5,10 @@ Export the user's tasks to a CSV file
 Format:
 ./1-export_to_CSV.py <user_id>
 """
+import requests
+from sys import argv
 
 if __name__ == '__main__':
-    from sys import argv
-    import requests
 
     user_id = int(argv[1])
     url = 'https://jsonplaceholder.typicode.com/users/{}'.format(user_id)
