@@ -20,4 +20,4 @@ if __name__ == '__main__':
                                                           todo_done,
                                                           len(todo)))
     for item in todo:
-        print('\t{}'.format(item.get('title')))
+        print('\t {}'.format(item.get('title')))
