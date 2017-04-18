@@ -2,9 +2,9 @@
 
 if __name__ == '__main__':
     """
-    Grab the todo list for the specified user id
+    Export the user's tasks to a CSV file
     Format:
-    ./0-gather_data_from_an_API.py <user_id>
+    ./1-export_to_CSV.py <user_id>
     """
     import requests
     from sys import argv
@@ -17,8 +17,8 @@ if __name__ == '__main__':
     csv_format = ''
     for item in todo:
         csv_format += '"{}","{}","{}","{}"\n'.format(item.get('userId'),
-                                                   user.get('username'),
-                                                   item.get('completed'),
-                                                   item.get('title'))
+                                                     user.get('username'),
+                                                     item.get('completed'),
+                                                     item.get('title'))
     with open('{}.csv'.format(user_id), mode='w') as csv:
         csv.write(csv_format)
