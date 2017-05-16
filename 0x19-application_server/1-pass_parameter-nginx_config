@@ -39,11 +39,13 @@ server {
                 internal;
         }
 
+	# problem 1 location
 	location /airbnb-dynamic/ {
 		include proxy_params;
 		proxy_pass http://127.0.0.1:8889/number_odd_or_even/;
 	}
 
+	# problem 0 location
 	location /airbnb-onepage/ {
 		include proxy_params;
 		proxy_pass http://127.0.0.1:8888/;
